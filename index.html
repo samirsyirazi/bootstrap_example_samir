@@ -1,31 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Airstream</title>
 
-    <!-- Import Bootstrap 5's utility classes and components via its CDN -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airstream</title>
 
-    
-    <!-- Import fonts awesome stylesheet -->
+  <!-- Import Bootstrap 5's utility classes and components via its CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
-    
-    <!-- Import custom stylesheet -->
-    
+  <!-- Import custom stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css">
 
-  </head>
-  <body>
-    
-    <!-- Container hosting the site main navigation, and header (aka "hero") Section -->
+  <!-- Import fonts awesome stylesheet (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Container hosting the newsletter form -->
+</head>
 
-    <!-- Container hosting a card group component -->
+<body>
+  <!-- Container hosting the site main navigation, and header (aka "hero") Section -->
+  <div class="container min-vh-75 p-4 fw-lighter">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container-fluid">
 
-    <!-- Footer hosting copyright information -->
+        <!-- Start of Site Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-small.png" alt="Company Logo">
+        </a>
+        <!-- End of Site Logo -->
 
-    <!-- Import Bootstrap 5's javascript library via its CDN -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign-in/Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  </body>
+    <!-- Hero Banner -->
+    <header class="herobanner 
+            rounded-4 
+            text-center 
+            mt-4 
+            pt-2 
+            pb-2 
+            d-flex 
+            flex-column 
+            align-items-center 
+            justify-content-center">
+      <h1 class="display-1 text-white fw-lighter shadow-effects text-uppercase">
+        Sole Runner
+      </h1>
+
+      <a href="#" class="btn btn-primary btn-primary-shadow text-uppercase fw-light">Enter</a>
+    </header>
+  </div>
+
+
+  <!-- Container hosting the newsletter form -->
+  <div class="container mt-5"></div>
+
+  <!-- Set up the CTA to subcribe to the newsletter -->
+  <div class="d-flex flex-column">
+    <div class="col-md-8 mx-auto">
+
+      <!-- Title -->
+      <div class="text-white text-center fw-light pt-2 pb-2">
+        Subscribe to our Newsletter:
+      </div>
+      <!-- Form to submit to subcribe to newsletter -->
+      <form action="https//end-point-url.com" method="post">
+        <!-- Input group to send email address -->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="e.g. john@gmail.com" aria-label="Recipient’s email"
+            aria-describedby="send-email" />
+          <button class="btn btn-primary" type="button" id="button-addon2">
+            <i class="fa-regular fa-paper-plane"></i>
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <!-- Container hosting a card group component -->
+  <div class="container my-4">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 border-0">
+          <img src="img/comfort.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0">
+          <img src="img/performance.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0">
+          <img src="img/outdoor.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer hosting copyright information -->
+  <!-- Footer hosting copyright information -->
+  <!--     
+    <footer class="text-white fw-lighter text-center py-3 border-top border-secondary border-opacity-50 mx-4">
+      <div>
+        &copy; 2025 Copyright.
+        <a href="#" class="text-decoration-none text-white">
+          Airstream &trade;. All rights reserved.
+        </a>
+      </div>
+    </footer>
+    -->
+
+      <!-- Custom footer (adapted from Bootstrap Dark Footer with Four Columns) -->
+    <footer class="py-4 py-md-5">
+      <!-- Footer top: brand name and social media links -->
+      <div
+        class="container border-bottom border-secondary border-opacity-50 pb-4"
+      >
+        <div class="row gy-3 align-items-sm-center">
+          <!-- Brand name -->
+          <div class="col-12 col-sm-6">
+            <a
+              href="#"
+              class="text-white text-decoration-none fs-4 fw-lighter text-uppercase"
+              >Airstream &trade;</a
+            >
+          </div>
+          <!-- Social media buttons (Font Awesome icons are already imported above) -->
+          <div class="col-12 col-sm-6">
+            <ul class="m-0 list-unstyled d-flex justify-content-sm-end gap-2">
+              <li>
+                <a href="#" class="btn btn-outline-light" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-outline-light" aria-label="X">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-outline-light" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-outline-light" aria-label="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer middle: four columns of links (2 per row on small screens) -->
+      <div class="container py-4">
+        <div class="row gy-4">
+          <!-- Column 1 -->
+          <div class="col-6 col-md-3">
+            <h5 class="text-white fw-light mb-3">Explore</h5>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >About</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Sign-up/Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-6 col-md-3">
+            <h5 class="text-white fw-light mb-3">Shop</h5>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Comfort</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Performance</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Outdoor</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Autumn Gear</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-6 col-md-3">
+            <h5 class="text-white fw-light mb-3">Support</h5>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Shipping</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Refund</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Warranty</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Size Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-6 col-md-3">
+            <h5 class="text-white fw-light mb-3">Community</h5>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Run Clubs</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Events</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer bottom: copyright and legal links -->
+      <div class="container border-top border-secondary border-opacity-50 pt-4">
+        <div class="row gy-3 align-items-lg-center">
+          <!-- Copyright (shown below the legal links on small screens) -->
+          <div class="col-12 col-lg-6 order-1 order-lg-0">
+            <p class="m-0 text-white fw-lighter">
+              &copy; 2025 Airstream &trade;. All rights reserved.
+            </p>
+          </div>
+          <!-- Legal links -->
+          <div class="col-12 col-lg-6">
+            <ul class="m-0 list-unstyled d-flex justify-content-lg-end gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-lighter"
+                  >Security</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+
+
+  <!-- Import Bootstrap 5's javascript library via its CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
